@@ -16,6 +16,8 @@ def run_experiment():
     lr = float(request.json['lr'])
     step_num = int(request.json['step_num'])
 
+    print("got inputs")
+
     # Run the experiment with the provided parameters
     visualize(activation, lr, step_num)
 
